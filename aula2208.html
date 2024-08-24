@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 22/08</title>
+</head>
+<body>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HYPER TEXT MARKUP LANGUAGE</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+
+    </dl>
+
+    <table border="3" cellpadding="2" cellspacing="1" width="20%" align="center" bgcolor="white">
+        <caption>TABELA DE EXEMPLO</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">Maria</td> 
+                <td align="center">28</td>
+                <td align="center">Rio de Janeiro</td>
+            </tr>
+            <tr>
+                <td align="center">João</td>
+                <td align="center">32</td>
+                <td align="center">São Paulo</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+<form action="/submit" method="POST">
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <br><br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    
+    <label for="Idade">Idade:</label>
+    <input type="number" id="idade" name="idade" min="18" max="100" required>
+
+    <fieldset>
+        <legend>Genero:</legend>      
+            <input type="checkbox" id="masculino" name="genero" value="masculino">
+            <label for="masculino">masculino</label>
+            <br><br>
+    
+            <input type="checkbox" id="feminino" name="genero" value="feminino">
+            <label for="feminino">feminino</label>
+            <br><br>
+    </fieldset>
+
+    <!--Campo select-->
+    <label for="pais">País:</label>
+    <select id="pais" name="pais" required>
+        <option value="BRASIL"></option>
+        <option value="EUA"></option>
+        <option value="CANADA"></option>
+    </select>
+    <br><br>
+
+</form>
+
+
+
+    
+</body>
+</html>
