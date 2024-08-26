@@ -40,6 +40,7 @@
 
 <form action="/submit" method="POST">
 
+<fieldset class="dados">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required>
     <br><br>
@@ -54,8 +55,10 @@
     
     <label for="Idade">Idade:</label>
     <input type="number" id="idade" name="idade" min="18" max="100" required>
+</fieldset>
 
-    <fieldset>
+    <!--fieldset usado para agrupamento de elementos de um mesmo input-->
+    <fieldset class="genero">
         <legend>Genero:</legend>      
             <input type="checkbox" id="masculino" name="genero" value="masculino">
             <label for="masculino">masculino</label>
@@ -69,15 +72,22 @@
     <!--Campo select-->
     <label for="pais">País:</label>
     <select id="pais" name="pais" required>
-        <option value="BRASIL"></option>
-        <option value="EUA"></option>
-        <option value="CANADA"></option>
+        <option value="BRASIL">BRASIL</option>
+        <option value="EUA">EUA</option>
+        <option value="CANADA">CANADA</option>
     </select>
     <br><br>
 
-</form>
+    <!-- DATA LIST-->
+     <label for="cor-favorita">Cor Favorita:</label>
+     <input list="cores" id="cor-favorita" name="cor-favorita">
+     <datalist id="cores">
+        <option value="vermelho">
+        <option value="azul">
+        <option value="amarelo">
+     </datalist>
 
-<p>tentando de novo</p>
+</form>
 
     
 </body>
